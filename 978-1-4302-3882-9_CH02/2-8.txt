@@ -1,0 +1,24 @@
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f
+avrdude: reading input file "blink.hex"
+avrdude: writing flash (292 bytes):
+
+Writing | ################################################## | 100% 0.07s
+
+avrdude: 292 bytes of flash written
+avrdude: verifying flash memory against blink.hex:
+avrdude: load data flash data from input file blink.hex:
+avrdude: input file blink.hex contains 292 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: verifying ...
+avrdude: 292 bytes of flash verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.

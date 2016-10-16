@@ -1,0 +1,16 @@
+# makefile for blink
+
+all: blink.hex
+
+blink.hex: blink.o
+	avr-objcopy -O ihex blink.o blink.hex
+
+blink.o: blink.c
+	avr-gcc -mmcu=atmega328p blink.c -o blink.o
+	
+prog: blink.hex
+	avrdude -p atmega328p -c arduino -P \\\.\COM11 -U flash:w:blink.hex:i -C D:\Progra~1\arduino-1.0-beta1/hardware/tools/avr/etc/avrdude.conf
+	
+clean:
+	rm blink.o
+	rm blink.hex

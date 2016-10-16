@@ -1,0 +1,12 @@
+### boards.txt
+
+# tinyCylon
+
+tinyCylon.name=tinyCylon
+
+tinyCylon.build.mcu=attiny13
+tinyCylon.build.f_cpu=1200000L
+tinyCylon.build.core=ATtiny13A
+
+tinyCylon.upload.maximum_size=1024
+tinyCylon.upload.using=arduino.ArduinoISP
